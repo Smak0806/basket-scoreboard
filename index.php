@@ -26,14 +26,26 @@
             <form id="formIndex">
                 <fieldset>
                     <label for=""></label>
-                    <select name="" id="" class="form-control"></select>
+                    <select name="" id="" class="form-control">
+                        <option value="Select Team">Seleccionar equipo</option>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </select>
                 </fieldset>
                 <fieldset>
                     <label for=""></label>
                     <select name="" id="" class="form-control"></select>
                     <?php 
 
-                        $equipos=getEquipos();
+                       // $equipos=getEquipos();
 
                         
                     
@@ -43,8 +55,9 @@
                                 
             </form>
             
-        </div>    
-        <div id="verEstadisticasBanner">
+        </div> 
+
+        <div id="verEstadisticasBanner"> 
             <button>Ver Estadisticas</button>
         </div>
         <div id="editarEquiposBanner">
