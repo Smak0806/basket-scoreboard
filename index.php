@@ -27,17 +27,8 @@
                 <fieldset>
                     <label for=""></label>
                     <select name="" id="" class="form-control">
-                        <option value="Select Team">Seleccionar equipo</option>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown button
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
+                        <option value="-1">Seleccionar equipo</option>
+                        
                     </select>
                 </fieldset>
                 <fieldset>
@@ -51,17 +42,47 @@
                     
                     ?>
                 </fieldset>
-                <button type="submit">Iniciar partida</button>
+                <button class="btn btn-primary" type="submit">Button</button>
                                 
             </form>
             
         </div> 
 
-        <div id="verEstadisticasBanner"> 
-            <button>Ver Estadisticas</button>
+        <div id="verEstadisticasBanner">
+            <h2>Ver Estadisticas</h2>
+            <form action="">
+                <fieldset>
+                    <input type="radio" id="" name="" value="">
+                    <label for="t"></label> 
+                    <input type="radio" id="" name="" value="">
+                    <label for="t"></label> 
+                </fieldset> 
+
+                <fieldset>
+                    <label for=""></label>
+                    <select name="" id="" class="">
+                        <option value="-1">Seleccionar equipo</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <label for=""></label>
+                    <select name="" id="" class="">
+                        <option value="-1">Seleccionar jugador</option>
+                    </select>
+                </fieldset>      
+
+                <button class="btn btn-primary" type="submit">Button</button>
+            </form>
         </div>
-        <div id="editarEquiposBanner">
-            <button>Ver Estadisticas</button>
+
+        <div class="results_banner">
+            <div class="results_title">
+                <h2>Ver Resultados</h2>
+            </div>
+            <div class="results_table">
+            <button class="btn btn-primary" type="submit">Button</button>
+            </div>
         </div>
 
 
