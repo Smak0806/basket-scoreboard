@@ -46,6 +46,9 @@ include "include/config.php";
         <div id="verEstadisticasBanner">
             <button>Ver Estadisticas</button>
         </div>
+        <div id="editarEquiposBanner">
+            <button>Ver Estadisticas</button>
+        </div>
 
 
     </div>
