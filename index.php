@@ -22,7 +22,7 @@
 <body>
     <div class="container">
         <div id="iniciarPartidaBanner">
-            <h2>Iniciar nuevo partido</h2>
+            <h2>Iniciar nuevo partido </h2>
             <form id="formIndex">
                 <fieldset>
                     <label for=""></label>
