@@ -1,5 +1,9 @@
 <?php
 
+include "admin/config.php";
+
+
+
 function db_connect(){
 
     $db_host = "localhost";
@@ -42,16 +46,16 @@ function genera_select($id){
     }   
 
     $conn -> close();
-
-    
     
 }
+
+
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php //include $rootDir.'/include/components/head.php'; ?>
+    <?php include './include/components/head.php'; ?>
 <body>
     <div class="container">
         <div id="iniciarPartidaBanner">
