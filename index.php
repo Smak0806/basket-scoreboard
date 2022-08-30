@@ -1,10 +1,14 @@
 <?php
 
-//include "include/config.php";
+include "control/config.php";
 
+$equipo = new Equipo();
 
+$listaEquipos = $equipo->obtenerEquipos();
 
-
+echo "<pre>";
+print_r($listaEquipos);
+echo "</pre>";
 
 
 ?>
