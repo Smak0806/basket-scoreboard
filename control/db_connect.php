@@ -21,12 +21,14 @@ function db_connect(){
 function mysqlQuery_select($query){
     
     $conn = db_connect();
-    
+
     if ($result = mysqli_query($conn, $query)) {
         echo "Returned rows are: " . mysqli_num_rows($result);
         // Free result set
-        mysqli_free_result($result);
-        }
+        return mysqli_free_result($result);
+    }else{
+        die("Error consulta");
+    }
     
 }
 

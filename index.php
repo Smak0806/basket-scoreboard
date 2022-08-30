@@ -1,21 +1,22 @@
 <?php
 
-include "control/config.php";
+include "./control/config.php";
 
 $equipo = new Equipo();
 
 $listaEquipos = $equipo->obtenerEquipos();
 
 echo "<pre>";
-print_r($listaEquipos);
+    print_r($listaEquipos);
 echo "</pre>";
+die("listo");
 
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php include $rootDir.'/include/components/head.php'; ?>
+    <?php //include $rootDir.'/include/components/head.php'; ?>
 <body>
     <div class="container">
         <div id="iniciarPartidaBanner">

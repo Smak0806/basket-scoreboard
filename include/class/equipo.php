@@ -23,6 +23,8 @@ class Equipo {
 
         $listadoEquipos = mysqlQuery_select($query);
 
+        return json_encode($listadoEquipos);
+
     }
 
     function desplegableEquipos(){
