@@ -22,13 +22,18 @@ function mysqlQuery_select($query){
     
     $conn = db_connect();
 
-    if ($result = mysqli_query($conn, $query)) {
-        echo "Returned rows are: " . mysqli_num_rows($result);
-        // Free result set
-        return mysqli_free_result($result);
-    }else{
-        die("Error consulta");
-    }
+    $result = $conn->query($query);
+
+    // Associative array
+    $row = $result->fetch_assoc();
+    printf ("%s (%s)\n", $row["idEquipo"], $row["nombreEquipo"]);
+
+    // Free result set
+    $result -> free_result();
+
+    return $result;
+
+    $conn -> close();
     
 }
 

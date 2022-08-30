@@ -6,11 +6,7 @@
 
     switch ($action){
         case 'newMatch':
-            
-            
-        
             break;
-
         case 'verEstadisticasEquipo':
             break;
         case 'verEstadisticasJugador':            

@@ -12,26 +12,31 @@ class Equipo {
     //public $partidosGanados
     //public $partidosPerdidos
   
-    // Methods
-    function ganaPartido($idEquipo) {
-      //mete en base de datos una victoria mas al equipo.
-    }
 
+    // Methods
     function obtenerEquipos(){
         
         $query = "";
 
         $listadoEquipos = mysqlQuery_select($query);
 
-        return json_encode($listadoEquipos);
+        return $listadoEquipos;
 
     }
 
     function desplegableEquipos(){
+        
+        $listado = Equipo::obtenerEquipos();
 
-        //db_connect($db_host, $db_user, $db_password, $db_name);
+        foreach ($listado as $key=>$value){
+
+        }
 
     }
+    function ganaPartido($idEquipo) {
+        //mete en base de datos una victoria mas al equipo.
+    }
+
 
 }
   

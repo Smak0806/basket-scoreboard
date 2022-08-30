@@ -1,16 +1,51 @@
 <?php
 
-include "./control/config.php";
+function db_connect(){
 
-$equipo = new Equipo();
+    $db_host = "localhost";
+    $db_name = "basket_admin";
+    $db_user = "root";
+    $db_password = "";
 
-$listaEquipos = $equipo->obtenerEquipos();
+    $mysqli = new mysqli($db_host, $db_user, $db_password, $db_name);
 
-echo "<pre>";
-    print_r($listaEquipos);
-echo "</pre>";
-die("listo");
+    // Check connection
+    if ($mysqli -> connect_errno) {
+      echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+      exit();
+    } else {
+        return $mysqli;
+    }
 
+}
+
+function genera_select($id){
+    
+    $returnString = "";
+
+    $conn = db_connect();
+
+    $query = "SELECT * FROM equipos";
+
+    $result = $conn->query($query);
+    
+    if(!$result){
+        die("Error en la consulta");
+    }else{
+        echo "<select id='$id' name='$id'>";
+
+        while ($row = $result->fetch_assoc()) {
+            echo "<option value='" . $row["idEquipo"] . "'>".$row["nombreEquipo"]."</option>";  
+        }
+
+        echo "</select>";
+    }   
+
+    $conn -> close();
+
+    
+    
+}
 
 ?>
 
@@ -23,22 +58,12 @@ die("listo");
             <h2>Iniciar nuevo partido </h2>
             <form id="formIndex">
                 <fieldset>
-                    <label for=""></label>
-                    <select name="" id="" class="form-control">
-                        <option value="-1">Seleccionar equipo</option>
-                        
-                    </select>
+                    <label for=""></label>                    
+                    <?php genera_select("equipoA"); ?>                
                 </fieldset>
                 <fieldset>
-                    <label for=""></label>
-                    <select name="" id="" class="form-control"></select>
-                    <?php 
-
-                       // $equipos=getEquipos();
-
-                        
-                    
-                    ?>
+                    <label for=""></label>                    
+                    <?php genera_select("equipoB"); ?>                                                
                 </fieldset>
                 <button class="btn btn-primary" type="submit">Button</button>
                                 
