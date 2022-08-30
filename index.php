@@ -14,42 +14,68 @@
     <?php include $rootDir.'/include/components/head.php'; ?>
 <body>
     <div class="container">
-
-
         <div id="iniciarPartidaBanner">
-            <h2>Iniciar nuevo partido</h2>
+            <h2>Iniciar nuevo partido </h2>
             <form id="formIndex">
                 <fieldset>
                     <label for=""></label>
-                    <select name="" id="" class="form-control"></select>
+                    <select name="" id="" class="form-control">
+                        <option value="-1">Seleccionar equipo</option>
+                        
+                    </select>
                 </fieldset>
                 <fieldset>
                     <label for=""></label>
                     <select name="" id="" class="form-control"></select>
                     <?php 
 
-                        $equipos=getEquipos();
+                       // $equipos=getEquipos();
 
                         
                     
                     ?>
                 </fieldset>
-                <button type="submit">Iniciar partida</button>
+                <button class="btn btn-primary" type="submit">Button</button>
                                 
             </form>
             
-        </div>  
-        
-        
+        </div> 
 
         <div id="verEstadisticasBanner">
-            <button>Ver Estadisticas</button>
+            <h2>Ver Estadisticas</h2>
+            <form action="">
+                <fieldset>
+                    <input type="radio" id="" name="" value="">
+                    <label for="t"></label> 
+                    <input type="radio" id="" name="" value="">
+                    <label for="t"></label> 
+                </fieldset> 
+
+                <fieldset>
+                    <label for=""></label>
+                    <select name="" id="" class="">
+                        <option value="-1">Seleccionar equipo</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <label for=""></label>
+                    <select name="" id="" class="">
+                        <option value="-1">Seleccionar jugador</option>
+                    </select>
+                </fieldset>      
+
+                <button class="btn btn-primary" type="submit">Button</button>
+            </form>
         </div>
 
-
-        
-        <div id="editarEquiposBanner">
-            <button>Ver Estadisticas</button>
+        <div class="results_banner">
+            <div class="results_title">
+                <h2>Ver Resultados</h2>
+            </div>
+            <div class="results_table">
+            <button class="btn btn-primary" type="submit">Button</button>
+            </div>
         </div>
 
 
