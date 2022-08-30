@@ -52,9 +52,9 @@
             <h2>Ver Estadisticas</h2>
             <form action="">
                 <fieldset>
-                    <input type="radio" id="" name="" value="">
+                    <input type="radio" id="team" name="select_team" value="TEAM">
                     <label for="t"></label> 
-                    <input type="radio" id="" name="" value="">
+                    <input type="radio" id="player" name="select_player" value="PLAYER">
                     <label for="t"></label> 
                 </fieldset> 
 
