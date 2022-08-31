@@ -84,10 +84,10 @@ function genera_select($id){
                     <h2>Ver Estadisticas</h2>
                     <form action="">
                         <fieldset>
-                            <input type="radio" id="" name="" value="">
-                            <label for="t"></label> 
-                            <input type="radio" id="" name="" value="">
-                            <label for="t"></label> 
+                            <input type="radio" id="selectEquipo" name="select_stats" value="Equipo">
+                            <label for="selectEquipo" style="color: white">Estadisticas Equipo</label> 
+                            <input type="radio" id="SelectJugador" name="select_stats" value="Jugador">
+                            <label for="SelectJugador" style="color: white">Estadisticas Jugador</label> 
                         </fieldset> 
 
                         <fieldset>

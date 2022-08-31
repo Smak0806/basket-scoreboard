@@ -43,6 +43,11 @@ button {
 
 fieldset {
     padding: 10px 0 !important;
+
+}
+
+label {
+    color: white;
 }
 
 /*Container general styles*/
@@ -103,6 +108,7 @@ fieldset {
     background: #232526;
     padding: 10rem !important;
 }
+
 
 /*Footer general styles*/
 .wrapperFooter {
