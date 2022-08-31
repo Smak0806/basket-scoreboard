@@ -57,75 +57,75 @@ function genera_select($id){
 <html lang="en">
     <?php include './include/components/head.php'; ?>
 <body>
-    <div class="container">
-        <div class="row col-12 p-0 m-0">
-            <?php include './include/components/header.php'; ?>
-        <div>
-        <div class="row col-12 p-0 m-0">
-            <div id="iniciarPartidaBanner" class="col-3">
-                <h2>Iniciar nuevo partido </h2>
-                <form id="formIndex">
-                    <fieldset>
-                        <label for=""></label>                    
-                        <?php genera_select("equipoA"); ?>                
-                    </fieldset>
-                    <fieldset>
-                        <label for=""></label>                    
-                        <?php genera_select("equipoB"); ?>                                                
-                    </fieldset>
-                    <button class="btn btn-primary" type="submit">Button</button>
-                                    
-                </form>
-                
-            </div> 
-
-            <div id="verEstadisticasBanner" class="col-3">
-                <h2>Ver Estadisticas</h2>
-                <form action="">
-                    <fieldset>
-                        <input type="radio" id="" name="" value="">
-                        <label for="t"></label> 
-                        <input type="radio" id="" name="" value="">
-                        <label for="t"></label> 
-                    </fieldset> 
-
-                    <fieldset>
-                        <label for=""></label>
-                        <select name="" id="" class="">
-                            <option value="-1">Seleccionar equipo</option>
-                        </select>
-                    </fieldset>
-                    
-                    <fieldset>
-                        <label for=""></label>
-                        <select name="" id="" class="">
-                            <option value="-1">Seleccionar jugador</option>
-                        </select>
-                    </fieldset>      
-
-                    <button class="btn btn-primary" type="submit">Button</button>
-                </form>
+    <div class="container-fluid">
+        <div class="container-wrapper">
+            <div class="wrapperHeader row col-12 p-0 m-0">
+                <?php include './include/components/header.php'; ?>
             </div>
 
-            <div id="editarEquipos" class="col-3">
-                <div class="">
-                    <h2>Editar Equipos</h2>
+            <div class="gameEditSection row col-12 p-0 m-0 text-center">
+                <div id="iniciarPartidaBanner " class="col">
+                    <h2>Iniciar nuevo partido</h2>
+                    <form id="formIndex">
+                        <fieldset>
+                            <label for=""></label>                    
+                            <?php genera_select("equipoA"); ?>                
+                        </fieldset>
+                        <fieldset>
+                            <label for=""></label>                    
+                            <?php genera_select("equipoB"); ?>                                                
+                        </fieldset>
+                        <button class="btn btn-primary" type="submit">Button</button>
+
+                    </form>
+                </div> 
+
+                <div id="verEstadisticasBanner" class="col order-2">
+                    <h2>Ver Estadisticas</h2>
+                    <form action="">
+                        <fieldset>
+                            <input type="radio" id="" name="" value="">
+                            <label for="t"></label> 
+                            <input type="radio" id="" name="" value="">
+                            <label for="t"></label> 
+                        </fieldset> 
+
+                        <fieldset>
+                            <label for=""></label>
+                            <select name="" id="" class="">
+                                <option value="-1">Seleccionar equipo</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for=""></label>
+                            <select name="" id="" class="">
+                                <option value="-1">Seleccionar jugador</option>
+                            </select>
+                        </fieldset>      
+
+                        <button class="btn btn-primary" type="submit">Button</button>
+                    </form>
                 </div>
-                <div>
-                    <fieldset>
-                        <label for=""></label>                    
-                        <?php genera_select("equipoA"); ?>                
-                    </fieldset>
-                </div>
-                <div class="">
-                    <button class="btn btn-primary" type="submit">Button</button>
+
+                <div id="editarEquipos" class="col order-3">
+                    <div class="">
+                        <h2>Editar Equipos</h2>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <label for=""></label>                    
+                            <?php genera_select("equipoA"); ?>                
+                        </fieldset>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-primary" type="submit">Button</button>
+                    </div>
                 </div>
             </div>
-        
+
+            <?php include './include/components/footer.php'; ?>
         </div>
-
-        <?php include './include/components/footer.php'; ?>
-
     </div>
     
     

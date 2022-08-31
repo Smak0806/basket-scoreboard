@@ -25,6 +25,12 @@ table {
     font-family: ;
 }
 
+h1,
+h2,
+h3 {
+    color: white;
+}
+
 #root {
     margin: ;
     padding: ;
@@ -35,4 +41,75 @@ button {
     cursor: pointer;
 }
 
-`
+fieldset {
+    padding: 10px 0 !important;
+}
+
+/*Container general styles*/
+.container {
+    max-width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+.container-wrapper {}
+
+/*Header general styles*/
+.wrapperHeader {
+    background-color: black;
+}
+
+.containerheader {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.logobanner {
+    width: 10%;
+}
+
+.logobanner figure {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.logobanner figure>img {
+    max-width: 60px;
+}
+
+.navigationWrapper ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+
+.navigationWrapper ul>li {
+    padding: 0 2rem;
+}
+
+.navigationWrapper ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Main app section styles*/
+.gameEditSection {
+    background: #232526;
+    padding: 10rem !important;
+}
+
+/*Footer general styles*/
+.wrapperFooter {
+    width: 100%;
+    background-color: black;
+}
+
+.wrapperFooter span {
+    color: whitesmoke;
+}
